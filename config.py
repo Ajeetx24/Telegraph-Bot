@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyrogram client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "24846461")
+    API_HASH  = os.environ.get("API_HASH", "b24aeb05423b4f434a9b1a3c642d157c")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config get this from mongodb
-    DB_NAME = os.environ.get("DB_NAME","Rkn-Developer")     
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/f6c15009bce07058f1edb.jpg")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6151758586').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "RknDeveloper")
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1001944995812'))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "hekdldmhrh")
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002619430668'))
 
     # download file
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
